@@ -13,6 +13,7 @@
                 "/MD",
                 "${workspaceFolder}\\glad.c",
                 "-I${workspaceFolder}\\include",
+                "-I${workspaceFolder}\\glm",
                 "/link",
                 "/LIBPATH:${workspaceFolder}\\lib",
                 "glfw3.lib",

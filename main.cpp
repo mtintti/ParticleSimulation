@@ -2,6 +2,7 @@
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
@@ -13,7 +14,7 @@ int main(){
     
     std::cout << "Hey c++ is working" ;
 
-    // Initialize GLFW
+    /*// Initialize GLFW
     if (!glfwInit())
     {
         std::cerr << "Failed to initialize GLFW\n";
@@ -47,21 +48,23 @@ int main(){
     // triangle tutorial
 
     float vertices[] = {
-        //-0.5f, -0.5f, 0.0f,
-        // 0.5f, -0.5f, 0.0f,
-        // 0.0f, 0.5f, 0.0f
+        -0.5f, -0.5f, 0.0f,
+        0.5f, -0.5f, 0.0f,
+        0.0f, 0.5f, 0.0f,
         0.5f, -0.5f,
-        //-0.5f, -0.5f,
-    };
+        -0.5f, -0.5f,
+    };*/
+
+
 
     
-
+    /*
     // unsigned int VBO;
     GLuint VBO = 0;
     glGenBuffers(1, &VBO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     // glBufferData(GL_ARRAY_BUFFER, 9 * sizeof(vertices), vertices, GL_STATIC_DRAW); old from tutorial
-    glBufferData(GL_ARRAY_BUFFER, 9 * sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, 9 * sizeof(vertices), vertices, GL_DYNAMIC_DRAW);
 
     GLuint vao = 0;
     glGenVertexArrays(1, &vao);
@@ -148,6 +151,6 @@ int main(){
         glfwPollEvents();
     }
 
-    glfwTerminate();
+    glfwTerminate();*/
     return 0;
 }
